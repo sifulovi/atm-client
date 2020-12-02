@@ -32,13 +32,16 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
+import { TourDetailsComponent } from './dashboard/tour-details/tour-details.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    TourDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -70,6 +73,7 @@ import { MatRippleModule } from '@angular/material/core';
     MatBadgeModule,
     MatIconModule,
     MatRippleModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,58 @@
+<div class="tour-details-container">
+  <div class="details">
+    <div class="description">
+     <h1>Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa, cum dicta doloremque ea eaque eligendi, facilis fugiat, laboriosam laborum minus nihil numquam quae quasi quisquam ratione reiciendis ut veritatis.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam, asperiores debitis dolores ducimus hic illum impedit modi molestiae mollitia numquam odio ariatur perspiciatis quidem saepe sapiente soluta totam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam, asperiores debitis dolores ducimus hic illum impedit modi molestiae mollitia numquam odio pariatur perspiciatis quidem saepe sapiente soluta totam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam, asperiores debitis dolores ducimus hic illum impedit modi molestiae mollitia numquam odio pariatur perspiciatis quidem saepe sapiente soluta totam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam, asperiores debitis dolores ducimus hic illum impedit modi molestiae mollitia numquam odio pariatur perspiciatis quidem saepe sapiente soluta totam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam, asperiores debitis dolores ducimus hic illum impedit modi molestiae mollitia numquam odio pariatur perspiciatis quidem saepe sapiente soluta totam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam, asperiores debitis dolores ducimus hic illum impedit modi molestiae mollitia numquam odio pariatur perspiciatis quidem saepe sapiente soluta totam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam, asperiores debitis dolores ducimus hic illum impedit modi molestiae mollitia numquam odio pariatur perspiciatis quidem saepe sapiente soluta totam.
+      </p>
+    </div>
+    <div class="images">
+      <img style="margin-top: 5px" mat-card-image src="https://blog.amarroom.com/wp-content/uploads/2018/11/Kuyakata-tour-guide.jpg" alt="Photo of a tour">
+    </div>
+  </div>
+
+
+  <div class="services">
+    <h1>Service</h1>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef> Weight </th>
+        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Symbol </th>
+        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+  </div>
+</div>

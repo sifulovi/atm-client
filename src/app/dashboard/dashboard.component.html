@@ -6,7 +6,9 @@
       <mat-card-title> {{tour?.title}}</mat-card-title>
       <mat-card-subtitle>{{tour?.subTitle}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="tour.image" alt="Photo of a tour">
+    <a [routerLink]="['/tour', tour.id]">
+      <img style="margin-top: 5px" mat-card-image [src]="tour.image" alt="Photo of a tour">
+    </a>
     <mat-card-content>
       <p>
         {{tour?.description}}

@@ -1,0 +1,28 @@
+.tour-details-container {
+  margin: 20px;
+  min-height: 90%;
+}
+
+.details {
+  justify-content: space-around;
+  display: flex;
+}
+
+.description {
+  padding: 5px;
+  margin: 5px;
+  width: 50%;
+}
+
+.description p {
+  line-height: 1.5;
+
+}
+.images {
+  margin: 5px;
+  width: 50%;
+}
+
+table {
+  width: 100%;
+}

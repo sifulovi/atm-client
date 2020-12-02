@@ -6,6 +6,7 @@
   width: 100%;
 }
 .example-card {
+  margin-right: 20px;
   width: 320px;
   height: auto;
   margin-bottom: 20px;
